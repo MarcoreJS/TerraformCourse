@@ -3,15 +3,15 @@ variable "ext_port" {
 }
 
 variable "int_port" {
-  type = number
+  type    = number
   default = 1880
   validation {
-    condition = var.int_port == 1880
+    condition     = var.int_port == 1880
     error_message = "The internal port must be 1880."
   }
 }
 
 variable "container_count" {
-  type = number
+  type    = number
   default = 1
 }
