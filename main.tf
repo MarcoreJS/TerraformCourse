@@ -7,9 +7,7 @@ terraform {
   }
 }
 
-provider "docker" {
-  host = "npipe:////.//pipe//docker_engine"
-}
+provider "docker" {}
 
 resource "docker_image" "nodered_image" {
   name = "nodered/node-red:latest"
